@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MySuite]">
+  <parameter name="chromeDriver" value="lib/chromedriver.exe"/>
+  <parameter name="objectMapFile" value="objectMap.properties"/>
+  <parameter name="browser" value="C:/Program Files (x86)/Mozilla Firefox/firefox.exe"/>
+  <parameter name="profile" value="C:/Users/ADMIN/AppData/Roaming/Mozilla/Firefox/Profiles/ngkk396a.default"/>
+  <parameter name="testDataFile" value="TestData.xlsx"/>
+  <parameter name="pageLoadTimeOutInSec" value="60"/>
+  <parameter name="implicitWaitInSec" value="20"/>
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"/>
+  <test name="MyTests(failed)">
+    <classes>
+      <class name="tests.ToJob_Workshift">
+        <methods>
+          <include name="Wshifts"/>
+        </methods>
+      </class> <!-- tests.ToJob_Workshift -->
+      <class name="tests.ToUserSearch">
+        <methods>
+          <include name="addUser"/>
+        </methods>
+      </class> <!-- tests.ToUserSearch -->
+      <class name="tests.ToJob_Categories">
+        <methods>
+          <include name="categ"/>
+        </methods>
+      </class> <!-- tests.ToJob_Categories -->
+      <class name="tests.AutomationSetup">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.AutomationSetup -->
+      <class name="tests.TologinOrangHRM">
+        <methods>
+          <include name="Login"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.TologinOrangHRM -->
+      <class name="tests.ToJob">
+        <methods>
+          <include name="jobs"/>
+        </methods>
+      </class> <!-- tests.ToJob -->
+    </classes>
+  </test> <!-- MyTests(failed) -->
+</suite> <!-- Failed suite [MySuite] -->
